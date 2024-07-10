@@ -55,7 +55,7 @@ const handleLinkClick1 = (event) => {
     // Show a SweetAlert modal in case there's no 'token'
     Swal.fire({
       title: "กรุณาเข้าสู่ระบบ",
-      text: "คุณต้องสมัครสมาชิกเพื่อทำการจอง",
+      text: "คุณต้องเข้าสู่ระบบเพื่อทำการจอง",
       icon: "error",
     });
   } else {
@@ -76,7 +76,7 @@ const handleLinkClick2 = (event) => {
     // Show a SweetAlert modal in case there's no 'token'
     Swal.fire({
       title: "กรุณาเข้าสู่ระบบ",
-      text: "คุณต้องสมัครสมาชิกเพื่อทำการจอง",
+      text: "คุณต้องเข้าสู่ระบบเพื่อทำการจอง",
       icon: "error",
     });
   } else {
@@ -96,7 +96,7 @@ const handleLinkClick3 = (event) => {
     // Show a SweetAlert modal in case there's no 'token'
     Swal.fire({
       title: "กรุณาเข้าสู่ระบบ",
-      text: "คุณต้องสมัครสมาชิกเพื่อทำการจอง",
+      text: "คุณต้องเข้าสู่ระบบเพื่อทำการจอง",
       icon: "error",
     });
   } else {
@@ -116,7 +116,7 @@ const handleLinkClick4 = (event) => {
     // Show a SweetAlert modal in case there's no 'token'
     Swal.fire({
       title: "กรุณาเข้าสู่ระบบ",
-      text: "คุณต้องสมัครสมาชิกเพื่อทำการจอง",
+      text: "คุณต้องเข้าสู่ระบบเพื่อทำการจอง",
       icon: "error",
     });
   } else {
@@ -136,7 +136,7 @@ const handleLinkClick5 = (event) => {
     // Show a SweetAlert modal in case there's no 'token'
     Swal.fire({
       title: "กรุณาเข้าสู่ระบบ",
-      text: "คุณต้องสมัครสมาชิกเพื่อทำการจอง",
+      text: "คุณต้องเข้าสู่ระบบเพื่อทำการจอง",
       icon: "error",
     });
   } else {
@@ -156,7 +156,7 @@ const handleLinkClick6 = (event) => {
     // Show a SweetAlert modal in case there's no 'token'
     Swal.fire({
       title: "กรุณาเข้าสู่ระบบ",
-      text: "คุณต้องสมัครสมาชิกเพื่อทำการจอง",
+      text: "คุณต้องเข้าสู่ระบบเพื่อทำการจอง",
       icon: "error",
     });
   } else {
@@ -267,9 +267,9 @@ const handleLinkClick6 = (event) => {
   <br />
 
   <div class="lg:flex gap-16 mb-20">
-    <div class="px-16 md:px-32">
+    <div class="md:px-28">
       <img
-        class="flex justify-items-center lg:h-[28rem] lg:w-[78rem] rounded-lg"
+        class="h-[28rem] w-[78rem] rounded-lg"
         src="../assets/Mask Group.jpg"
       />
     </div>
@@ -300,9 +300,9 @@ const handleLinkClick6 = (event) => {
   <br />
 
   <div class="lg:flex flex-row-reverse gap-16">
-    <div class="px-16 md:px-32">
+    <div class="md:px-28">
       <img
-        class="flex justify-items-center lg:h-[28rem] lg:w-[82rem] lg:mr-24 rounded-lg"
+        class="h-[28rem] w-[78rem] lg:mr-24 rounded-lg"
         src="../assets/mask1.png"
       />
     </div>

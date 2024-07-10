@@ -9,7 +9,7 @@
                 </div>
             </form>
             <input type="checkbox" id="theme-toggle" style="display: none;">
-            <label for="theme-toggle" class="theme-toggle"></label>
+            <!-- <label for="theme-toggle" class="theme-toggle"></label> -->
             <a href="#" class="profile">
                 <img src="../assets/46.png">
             </a>

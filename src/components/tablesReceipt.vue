@@ -12,8 +12,9 @@
               <thead>
                 <tr>
                   <th>Email</th>
-                  <th>Address</th>
                   <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>idcard</th>
                   <th>Image</th>
                 </tr>
               </thead>
@@ -22,11 +23,15 @@
                   <td>
                     <p>{{ user.email}}</p>
                   </td>
+          
                   <td>
-                    <p>{{ user.address }}</p>
+                    <p>{{ user.fristname }}</p>
                   </td>
                   <td>
-                    <p>{{ user.firstname }}</p>
+                    <p>{{ user.lastname }}</p>
+                  </td>
+                  <td>
+                    <p>{{ user.idcard }}</p>
                   </td>
                   <td>
                     <button @click="isopen(user.imageURL)"> <img  :src="user.imageURL" alt="Receipt Image"   class="" /></button>

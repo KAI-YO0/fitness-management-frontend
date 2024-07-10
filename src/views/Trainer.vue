@@ -30,23 +30,96 @@
 </div>
 
 
+<br >
+  <br >
+  <br >
+  <br>
+  <br>
+
+  <div class="lg:flex gap-16 mb-20">
+    <div class="px-16 md:px-32">
+      <img
+        class="flex justify-items-center lg:h-[28rem] lg:w-[82rem] rounded-lg"
+        src="../assets/trainer.jpg"
+      />
+    </div>
+
+    <a
+      href="#"
+      class="grid grid-cols-1 justify-items-center w-full lg:mr-24 pt-10 "
+    >
+      <div class="pt-16 xl:pt-24 px-4 lg:px-2">
+        <p
+          class="mb-4 text-4xl ju font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          Work out at home for free.
+        </p>
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym. With hundreds of professional
+          workouts, healthy recipes and informative articles, as well as one of
+          the most positive communities on the web, you’ll have everything you
+          need to reach your personal fitness goals – for free!
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <br >
+  <br >
+  <br >
+  <br>
+
+  <div class="lg:flex flex-row-reverse gap-16">
+    <div class="px-16 md:px-32">
+      <img
+        class="flex justify-items-center lg:h-[28rem] lg:w-[75rem]  rounded-lg"
+        src="../assets/mask1.png"
+      />
+    </div>
+
+    <a
+      href="#"
+      class="grid grid-cols-1 justify-items-center w-full rounded-lg lg:ml-24 "
+    >
+      <div class="pt-24 xl:pt-28 px-4 lg:px-2">
+        <h5
+          class="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          Get more with low-cost training programs and advanced features.
+        </h5>
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym. With hundreds of professional
+          workouts, healthy recipes and informative articles, as well as one of
+          the most positive communities on the web, you’ll have everything you
+          need to reach your personal fitness goals – for free!
+        </p>
+      </div>
+    </a>
+  </div>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+<div class="mt-5  w-full h-20 text-black text-center py-32 font-bold text-5xl">
+    Traine'r
+  </div>
+
+
+
 
 
 <div class="grid lg:grid-cols-3 justify-items-center gap-6 px-10 py-10">
 <div>
 <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg px-2 shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" >
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bonnie Green</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Michael Foster</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">weight training</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">This is worthwhile training, if you don't try it you will regret it.</p>
         <div class="flex justify-end mt-4 ">
+          
     <button @click.prevent="openModal" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       Reserve
     </button>
@@ -54,31 +127,31 @@
     <!-- Modal2 -->
     <div v-if="showModal" class="fixed inset-0 overflow-y-auto z-50 flex items-center justify-center  bg-gray-900 bg-opacity-50">
       <div class="modal-content bg-white p-8 rounded-lg w-96">
-        <h2 class="text-lg font-semibold mb-4">กรอกข้อมูล</h2>
+        <h2 class="text-lg font-semibold mb-4">Reserve</h2>
         <form @submit.prevent="handleSubmit">
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700">ชื่อ:</label>
+            <label for="name" class="block text-sm font-medium text-gray-700">Nane:</label>
             <input v-model="userObject.firstname" type="text" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
           </div>
           <div class="mb-4 ">
             <div class="py-4">
-              <label for="timeStart" class="block  text-sm font-medium text-gray-700">ตั้งแต่เวลา:</label>
+              <label for="timeStart" class="block  text-sm font-medium text-gray-700">Start Date:</label>
               <input v-model="formData.StartHour" type="datetime-local" id="datetime" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
             </div>
             <div class="py-4">
-              <label for="timeEnd" class="block text-sm font-medium text-gray-700">ถึงเวลา:</label>
+              <label for="timeEnd" class="block text-sm font-medium text-gray-700">End Date:</label>
               <input v-model="formData.EndHour" type="datetime-local" id="datetime" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
             </div>
           </div>
           <div class="w-full grid lg:grid-cols-2 gap-2 justify-items-center py-4  ">
         
-            <button type="button" @click="showModal = false" class=" w-full   py-2 bg-gray-300 border border-transparent rounded-md font-semibold text-gray-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 ">
-              ยกเลิก
+            <button type="button" @click="showModal = false" class=" w-full   py-2 bg-gray-300 border border-transparent rounded-md font-semibold text-gray-700 hover:bg-gray-400  ">
+              Cancel
             </button>
           
           
-            <button type="submit" class=" w-full  py-2 bg-black border border-transparent rounded-md font-semibold text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-              ตกลง
+            <button type="submit" class=" w-full  py-2 bg-black border border-transparent rounded-md font-semibold text-white hover:bg-gray-500 ">
+             Confirm
             </button>
           
           </div>
@@ -95,7 +168,8 @@
     <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bonnie Green</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">weight training</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">This is worthwhile training, if you don't try it you will regret it.</p>
         <div class="flex justify-end mt-4 ">
     <button @click.prevent="openModal1" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       Reserve
@@ -104,31 +178,31 @@
     <!-- Modal2 -->
     <div v-if="showModal1" class="fixed inset-0 overflow-y-auto z-50 flex items-center justify-center  bg-gray-900 bg-opacity-50">
       <div class="modal-content bg-white p-8 rounded-lg w-96">
-        <h2 class="text-lg font-semibold mb-4">กรอกข้อมูล</h2>
+        <h2 class="text-lg font-semibold mb-4">Reserve</h2>
         <form @submit.prevent="handleSubmit1">
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700">ชื่อ:</label>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
             <input v-model="userObject.firstname" type="text" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
           </div>
           <div class="mb-4 ">
             <div class="py-4">
-              <label for="timeStart" class="block  text-sm font-medium text-gray-700">ตั้งแต่เวลา:</label>
+              <label for="timeStart" class="block  text-sm font-medium text-gray-700">Start Date:</label>
               <input v-model="formData1.StartHour" type="datetime-local" id="datetime" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
             </div>
             <div class="py-4">
-              <label for="timeEnd" class="block text-sm font-medium text-gray-700">ถึงเวลา:</label>
+              <label for="timeEnd" class="block text-sm font-medium text-gray-700">End Date:</label>
               <input v-model="formData1.EndHour" type="datetime-local" id="datetime" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
             </div>
           </div>
           <div class="w-full grid lg:grid-cols-2 gap-2 justify-items-center py-4  ">
         
-            <button type="button" @click="showModal1 = false" class=" w-full   py-2 bg-gray-300 border border-transparent rounded-md font-semibold text-gray-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 ">
-              ยกเลิก
+            <button type="button" @click="showModal1 = false" class=" w-full   py-2 bg-gray-300 border border-transparent rounded-md font-semibold text-gray-700 hover:bg-gray-400  ">
+              Cancel
             </button>
           
           
-            <button type="submit" class=" w-full  py-2 bg-black border border-transparent rounded-md font-semibold text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-              ตกลง
+            <button type="submit" class=" w-full  py-2 bg-black border border-transparent rounded-md font-semibold text-white hover:bg-gray-500 ">
+             Confirm
             </button>
           
           </div>
@@ -142,10 +216,11 @@
 
 <div>
 <a href="#" class="flex flex-col items-center bg-white border px-2 border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bonnie Green</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tom Cook</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">weight training</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">This is worthwhile training, if you don't try it you will regret it.</p>
         <div class="flex justify-end mt-4 ">
     <button @click.prevent="openModal2" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       Reserve
@@ -154,31 +229,31 @@
     <!-- Modal2 -->
     <div v-if="showModal2" class="fixed inset-0 overflow-y-auto z-50 flex items-center justify-center  bg-gray-900 bg-opacity-50">
       <div class="modal-content bg-white p-8 rounded-lg w-96">
-        <h2 class="text-lg font-semibold mb-4">กรอกข้อมูล</h2>
+        <h2 class="text-lg font-semibold mb-4">Reserve</h2>
         <form @submit.prevent="handleSubmit2">
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700">ชื่อ:</label>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
             <input v-model="userObject.firstname" type="text" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
           </div>
           <div class="mb-4 ">
             <div class="py-4">
-              <label for="timeStart" class="block  text-sm font-medium text-gray-700">ตั้งแต่เวลา:</label>
+              <label for="timeStart" class="block  text-sm font-medium text-gray-700">Start Date:</label>
               <input v-model="formData2.StartHour" type="datetime-local" id="datetime" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
             </div>
             <div class="py-4">
-              <label for="timeEnd" class="block text-sm font-medium text-gray-700">ถึงเวลา:</label>
+              <label for="timeEnd" class="block text-sm font-medium text-gray-700">End Date:</label>
               <input v-model="formData2.EndHour" type="datetime-local" id="datetime" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
             </div>
           </div>
           <div class="w-full grid lg:grid-cols-2 gap-2 justify-items-center py-4  ">
         
-            <button type="button" @click="showModal2 = false" class=" w-full   py-2 bg-gray-300 border border-transparent rounded-md font-semibold text-gray-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 ">
-              ยกเลิก
+            <button type="button" @click="showModal2 = false" class=" w-full   py-2 bg-gray-300 border border-transparent rounded-md font-semibold text-gray-700 hover:bg-gray-400  ">
+              Cancel
             </button>
           
           
-            <button type="submit" class=" w-full  py-2 bg-black border border-transparent rounded-md font-semibold text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-              ตกลง
+            <button type="submit" class=" w-full  py-2 bg-black border border-transparent rounded-md font-semibold text-white hover:bg-gray-500  ">
+              Confirm
             </button>
           
           </div>
@@ -323,11 +398,14 @@
 
 </div> -->
 
+<br>
+<br>
+<br>
 
 
 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-  <footer class="bg-white dark:bg-gray-900">
-    <div class="mx-auto w-full max-w-screen-full text-center">
+  <footer class="bg-white dark:bg-gray-900 ">
+    <div class="mx-auto w-full max-w-screen-full  text-center">
       <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
         <div>
           <h2
@@ -517,6 +595,7 @@
       </div>
     </div>
   </footer>
+
 </template>
 
 <script setup>
@@ -524,6 +603,7 @@ import Nav from "@/components/Nav.vue";
 import { ref } from 'vue';
 import { useToast } from "vue-toastification";
 import axios from 'axios';
+
 const userObject = JSON.parse(localStorage.getItem("userObj"))
 const showModal = ref(false);
 const formData = ref({
@@ -562,7 +642,7 @@ const handleSubmit = () => {
   })
   
   .then(response => {
-    toast.success("Buy Success", {
+    toast.success("Reserve Success", {
                 position: "top-right",
                 timeout: 1000,
             });

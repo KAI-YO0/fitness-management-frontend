@@ -5,9 +5,9 @@
  
 
  <div class="md:flex md:flex-col-2  lg:px-10 md:px-44  ">
-  <div class="bg-white lg:my-24 rounded-lg shadow-xl">
+  <div class="bg-white lg:my-32 rounded-lg shadow-xl">
    <img class=" py-10  px-10  lg:h-[28rem]" src="../assets/qr.png">
-   <div class="  lg:py-10  py-4 ml-28 md:ml-32">
+   <div class="  lg:py-10  py-4 ml-28 md:ml-36">
     <img class="w-[10rem] " src="../assets/prompt.png">
   </div> 
   </div>
@@ -23,10 +23,20 @@
     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
     <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  required />
   </div>
+
+  <div class="mb-5">
+    <label for="fristname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Firstname</label>
+    <input type="fristname" id="fristname" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  required />
+  </div>
+
+  <div class="mb-5">
+    <label for="lastname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lastname</label>
+    <input type="lastname" id="lastname" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  required />
+  </div>
   
   <div class="mb-5">
-    <label for="address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">address</label>
-    <input type="address" id="address" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+    <label for="idcard" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ID card</label>
+    <input type="idcard" id="idcard" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
   </div>
   
   <div class="mb-5">
@@ -112,8 +122,14 @@ const onBuy = async () => {
     const email = document.getElementById("email").value;
     formData.append("email", email);
 
-    const address = document.getElementById("address").value;
-    formData.append("address", address);
+    const fristname = document.getElementById("fristname").value;
+    formData.append("fristname", fristname);
+
+    const lastname = document.getElementById("lastname").value;
+    formData.append("lastname", lastname);
+
+    const idcard = document.getElementById("idcard").value;
+    formData.append("idcard", idcard);
 
     const phoneNumber = document.getElementById("phoneNumber").value;
     formData.append("phoneNumber", phoneNumber);

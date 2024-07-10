@@ -24,7 +24,7 @@
                 :class="[item.current  ?  ' text-white hover:bg-gray-700 hover:text-white' : ' text-gray-300 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']"
                 
                 :aria-current="item.current ? 'page' : undefined">
-                <div :class="(item.name === 'Login' && userObject) || (item.name === 'Personal trainer' && !userObject) || (item.name === 'Member ship' && userObject) ? 'hidden' : 'block'"> 
+                <div :class="(item.name === 'Login' && userObject) || (item.name === 'Personal trainer' && !userObject) || (item.name === 'Member ship' && userObject) || (item.name === 'ReserveClasses' && !userObject) ? 'hidden' : 'block' "> 
                     {{ item.name }}
                 </div>         
               </RouterLink>
@@ -34,12 +34,12 @@
         </div>
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
          <div class="text-white px-2"> {{ userObject?.firstname }} {{ userObject?.lastname }}</div>
-         <button type="button" @click="toggleModal" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+         <!-- <button type="button" @click="toggleModal" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
     <span class="absolute -inset-1.5" />
     <span an class="sr-only">View notifications</span>
     <BellIcon class="h-6 w-6 " aria-hidden="true" />
     <span v-if="notificationCount > 0" class="absolute -top-1 -right-1 bg-red-500 text-white rounded-full px-2">{{ notificationCount }}</span>
-  </button>
+  </button> -->
   <!-- โค้ด HTML เดิมของคุณ -->
 
   <!-- โมดอล -->
@@ -81,11 +81,11 @@
           <button type="button" @click="toggleModal" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
             ปิด
           </button>
-          <RouterLink to="/tablesTrainer">
+          <!-- <RouterLink to="/tablesTrainer">
             <button type="button" @click="toggleModal" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
                 ดูเพิ่มเติม
             </button>
-          </RouterLink>
+          </RouterLink> -->
         </div>
       </div>
     </div>
@@ -127,9 +127,12 @@
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pb-3 pt-2">
         <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href"
-          :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"
+          :class="[item.current ? 'text-gray-300 hover:bg-gray-700 hover:text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"
           :aria-current="item.current ? 'page' : undefined">
-          <div :class="item.name === 'Login' && userObject ? 'hidden' : 'block'  " > {{ item.name }}</div>
+          <div :class="(item.name === 'Login' && userObject) || (item.name === 'Personal trainer' && !userObject) || (item.name === 'Member ship' && userObject) || (item.name === 'ReserveClasses' && !userObject) ? 'hidden' : 'block' "> 
+                    {{ item.name }}
+                </div>   
+          
           
 
         </DisclosureButton>
@@ -190,10 +193,13 @@ onMounted(fetchData)
 
 const open = ref(true)
 const navigation = [
+{ name: 'Member ship', href: '/member', current: true },
+{ name: 'Login' , href: '/login' , current: false},
 { name: 'About', href: '/', current: false },
+{ name: 'ReserveClasses' , href: '/tablesTrainer' , current: false},
 { name: 'Personal trainer', href: '/trainer', current: false },
-  { name: 'Member ship', href: '/member', current: true },
-  { name: 'Login' , href: '/login' , current: false},
+  
+  
   
 ]
 onMounted(() => {

@@ -113,8 +113,7 @@ export default {
                                     required>
                             </div>
                             <div class="ms-3 text-sm">
-                                <label for="remember" class="font-medium text-gray-500 dark:text-gray-400">Remember this
-                                    device</label>
+                                <label for="remember" class="font-medium text-gray-500 dark:text-gray-400">I agree to the terms and conditions</label>
                             </div>
                             <!-- <a href="#" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                                 class="ms-auto text-sm font-medium text-black hover:underline dark:text-blue-500">Lost
