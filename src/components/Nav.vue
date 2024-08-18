@@ -197,7 +197,8 @@ const navigation = [
 { name: 'Login' , href: '/login' , current: false},
 { name: 'About', href: '/', current: false },
 { name: 'ReserveClasses' , href: '/tablesTrainer' , current: false},
-{ name: 'Personal trainer', href: '/trainer', current: false },
+// { name: 'Personal trainer', href: '/trainer', current: false },
+// { name: 'zzz', href: '/trainer', current: false },
   
   
   

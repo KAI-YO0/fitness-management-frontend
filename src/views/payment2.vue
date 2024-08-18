@@ -35,10 +35,10 @@
     <input type="lastname" id="lastname" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  required />
   </div>
   
-  <div class="mb-5">
+  <!-- <div class="mb-5">
     <label for="idcard" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ID card</label>
     <input type="idcard" id="idcard" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
-  </div>
+  </div> -->
       
       <div class="mb-5">
         <label for="phoneNumber" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">PhoneNumber</label>
@@ -126,8 +126,8 @@
     const lastname = document.getElementById("lastname").value;
     formData.append("lastname", lastname);
 
-    const idcard = document.getElementById("idcard").value;
-    formData.append("idcard", idcard);
+    // const idcard = document.getElementById("idcard").value;
+    // formData.append("idcard", idcard);
     
         const phoneNumber = document.getElementById("phoneNumber").value;
         formData.append("phoneNumber", phoneNumber);
